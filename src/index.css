@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.hide-scroll-x::-webkit-scrollbar {
+  width: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background:  #ffff;
+  font-weight: 400;
+  color: black;
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+.font-mulish {
+  font-family: 'Mulish', sans-serif;
+}
+.shadow {
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.05);
+}
+
+.password-input input{
+  @apply font-mulish text-[12px] bg-[#F8F8F8]
+}
+.password-input.big input{
+  @apply font-mulish text-[14px] bg-[#F8F8F8]
+
+}
+.password-input > div{
+  @apply rounded-[4px] border-[#D8D8D8]  h-[36px]
+}
+.mantine-Input-input{
+  @apply bg-[#F8F8F8]
+}
+
+.mantine-Table-root tr{
+  background-color: transparent!important;
+}
+.mantine-Table-root thead{
+  background-color: #F7F7F7!important;
+}
+.mantine-Table-root tbody tr td{
+  font-size: 12px!important;
+}
